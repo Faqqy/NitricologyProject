@@ -1,12 +1,13 @@
 /* vars */
+
 @font-face {
     font-family: "Rubik-Regular";
-    src: url('./fonts/Rubik/Rubik-Regular.woff') format('woff');
+    src: url('./fonts/Rubik/Rubik-Regular.woff') format('woff')
 }
 
 @font-face {
     font-family: "Santello";
-    src: url("https://db.onlinewebfonts.com/t/a3dd14b0016c8c4288002bbe7b23d782.woff")format("woff");
+    src: url("https://db.onlinewebfonts.com/t/a3dd14b0016c8c4288002bbe7b23d782.woff")format("woff")
 }
 
 
@@ -78,6 +79,10 @@ a:hover {
 
 .header__navigation--item {
     padding: 0px 20px 0px 20px;
+}
+
+.header__social {
+    font-size: 18px;
 }
 
 .header__social--item {
