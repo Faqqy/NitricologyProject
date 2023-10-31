@@ -55,14 +55,14 @@ a:hover {
 .header {
     position: fixed;
     top: 0;
-    height: 117px;
+    height: 75px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 18px 31px -5px rgba(0, 0, 0, 0.06);
 }
 
 .logo__img {
-    width: 15rem;
+    width: 10rem;
     margin-left: -20px;
 }
 
@@ -103,7 +103,7 @@ a:hover {
 /* wrapper */
 
 .wrapper {
-    margin-top: 117px;
+    margin-top: 75px;
     height: 100%;
 }
 
