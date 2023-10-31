@@ -54,16 +54,20 @@ a:hover {
 
 .header {
     position: fixed;
+    top: 0;
     height: 117px;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 0 18px 31px -5px rgba(0, 0, 0, 0.06);
 }
 
 .logo__img {
     width: 15rem;
+    margin-left: -20px;
 }
 
 .header__menu, .header__social {
-    font-family: "Santello";
+    font-family: "Santello", serif;
 }
 
 .header__menu {
@@ -94,4 +98,42 @@ a:hover {
 
 .header__social--item i {
     padding-right: 5px;
+}
+
+/* wrapper */
+
+.wrapper {
+    margin-top: 117px;
+    height: 100%;
+}
+
+.wrapper__container--fullBackground {
+    background: url("/images/banner5.png") no-repeat right center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.block__title {
+    font-family: "Santello", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 850px;
+    color: #222222;
+}
+
+.top__title {
+    width: 560px;
+}
+
+.top__title h1 {
+    font-size: 44px;
+    color: var(--accent-hight-green);
+}
+
+.top__title p {
+    line-height: 1.4;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
 }
