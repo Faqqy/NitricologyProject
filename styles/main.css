@@ -48,6 +48,26 @@ a:hover {
     --text_color-end: #222;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
 /* --end vars */
 
 /* header */
@@ -108,9 +128,9 @@ a:hover {
 }
 
 .wrapper__container--fullBackground {
-    background: url("/images/banner5.png") no-repeat right center;
-    -webkit-background-size: contain;
-    background-size: contain;
+    background: rgba(0, 0, 0, 0.02) url("/images/banner5.png") no-repeat right center;
+    -webkit-background-size: 60%;
+    background-size: 60%;
 }
 
 .block__title {
@@ -118,7 +138,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 850px;
+    height: 650px;
     color: #222222;
 }
 
@@ -136,4 +156,21 @@ a:hover {
     padding-top: 10px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.top__title button {
+    width: fit-content;
+    height: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(0, 104, 56) linear-gradient(13deg, rgba(0, 104, 56, 1) 0%, rgba(0, 147, 69, 1) 20%, rgba(161, 205, 59, 1) 60%);
+    background-size: 200% 100%;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.top__title button:hover {
+    animation: animateBg 2s infinite ease-in-out;
 }
