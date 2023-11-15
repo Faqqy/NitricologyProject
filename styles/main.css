@@ -20,7 +20,7 @@ html, body {
 
 body {
     overflow-x: hidden;
-    font-family: "Rubik-Regular";
+    font-family: "Santello", serif;
     line-height: 1;
 }
 
@@ -173,4 +173,40 @@ button {
 
 .top__title button:hover {
     animation: animateBg 2s infinite ease-in-out;
+}
+
+/* aboutMe */
+
+.wrapper__container--aboutMe {
+    height: 750px;
+    padding-top: 80px;
+    line-height: 1.4;
+}
+
+.title__aboutMe {
+    font-size: 34px;
+    color: var(--accent-hight-green);
+    margin-bottom: 50px;
+}
+
+.about__text {
+    font-size: 18px;
+}
+
+.color__span {
+    background: var(--accent-hight-green);
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.about__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.about__image img {
+    width: 90%;
 }
