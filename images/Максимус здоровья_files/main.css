@@ -93,7 +93,6 @@ button {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 18px 31px -5px rgba(0, 0, 0, 0.06);
-    z-index: 9;
 }
 
 .logo__img {
@@ -192,43 +191,11 @@ button {
 
 /* aboutMe */
 
-.wrapper__container--pain, .wrapper__container--decision, .wrapper__container--about, .wrapper__container--instruments, .wrapper__container--broadband{
+.wrapper__container--pain, .wrapper__container--decision, .wrapper__container--about{
     height: fit-content;
     padding-top: 80px;
     line-height: 1.4;
     padding-bottom: 80px;
-}
-
-.wrapper__container--pain {
-    background: rgba(0, 0, 0, 0.02);
-}
-
-.wrapper__container--instruments {
-    background: rgba(0, 0, 0, 0.02);
-}
-
-
-.wrapper__container--decision {
-    position: relative;
-}
-
-.fly__image {
-    position: absolute;
-    right: -80px;
-    bottom: -100px;
-    width: 360px;
-}
-
-.fly__image2 {
-    position: absolute;
-    left: -190px;
-    bottom: -100px;
-    width: 360px;
-    transform: rotate(190deg);
-}
-
-.wrapper__container--about {
-    position: relative;
 }
 
 .color__span {
@@ -236,6 +203,10 @@ button {
     width: 100%;
     height: 3px;
     border-radius: 10px;
+}
+
+.wrapper__container--decision {
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .about__text {
@@ -247,12 +218,11 @@ button {
     width: 100%;
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
 
 .items__grid--item {
     width: 100%;
-    height: fit-content;
     border-radius: 10px;
     background: rgb(0, 104, 56) linear-gradient(13deg, rgba(0, 104, 56, 1) 0%, rgba(0, 147, 69, 1) 20%, rgba(161, 205, 59, 1) 100%);
     cursor: pointer;
@@ -262,7 +232,6 @@ button {
 }
 
 .items__grid--item  p{
-    margin: 0;
     font-size: 14px;
 }
 
@@ -293,101 +262,3 @@ button {
 
     font-size: 16px;
 }
-
-.popupFromCards {
-    display: none;
-    font-size: 14px;
-}
-
-.popupFromCards.active {
-    display: block;
-}
-
-.wrapper__container--about.click .popupFromCards.active {
-    display: none;
-}
-
-.instrument__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.instrument__items i {
-    font-size: 70px;
-    padding-bottom: 20px;
-}
-
-.instrument__items p {
-    font-size: 20px;
-}
-
-.left__instrument {
-    position: relative;
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(40rem, 100%), 2fr));
-}
-
-.left__instrument--item span {
-    position: absolute;
-    display: block;
-    font-size: 100px;
-    padding: 10px;
-    color: rgba(0, 104, 56, 0.2);
-    z-index: -1;
-}
-
-.wrapper__container--lead {
-    position: relative;
-    background-image: url("/images/93.jpg");
-    min-height: 400px;
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.lead__magnet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 400px;
-}
-
-.lead__magnet h3 {
-    width: 900px;
-    color: #fff;
-    font-size: 50px;
-}
-
-.lead__magnet button {
-    width: fit-content;
-    height: 50px;
-    padding: 10px;
-    border-radius: 3px;
-    background: rgb(0, 104, 56) linear-gradient(13deg, rgba(0, 104, 56, 1) 0%, rgba(0, 147, 69, 1) 20%, rgba(161, 205, 59, 1) 60%);
-    background-size: 200% 100%;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 25px;
-    font-size: 18px;
-}
-
-.lead__magnet button:hover {
-    animation: animateBg 2s infinite ease-in-out;
-}
-
-.price {
-    font-weight: bold;
-    padding-top: 20px;
-    font-size: 24px;
-}
-
-
